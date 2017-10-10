@@ -8,36 +8,45 @@
 
     <Button
         android:id="@+id/btn_response1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
         android:text="@string/response1"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="324dp" />
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_response3" />
 
     <Button
         android:id="@+id/btn_response2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
         android:text="@string/response2"
-        tools:layout_editor_absoluteX="216dp"
-        tools:layout_editor_absoluteY="324dp" />
-        app:layout_constraintLeft_toLeftOf="@+id/btn_response1"
-
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_response4" />
     <Button
         android:id="@+id/btn_response3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
         android:text="@string/response3"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="385dp" />
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="9dp"
+        tools:layout_editor_absoluteY="530dp" />
 
     <Button
         android:id="@+id/btn_response4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
         android:text="@string/response4"
-        tools:layout_editor_absoluteX="216dp"
-        tools:layout_editor_absoluteY="389dp" />
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        tools:layout_editor_absoluteY="530dp"
+        tools:layout_editor_absoluteX="218dp" />
 
     <TextView
         android:id="@+id/tv_team"
@@ -47,50 +56,62 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="28dp" />
+        android:layout_marginLeft="16dp" />
 
     <TextView
         android:id="@+id/tv_player"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/player"
-        tools:layout_editor_absoluteX="16dp"
         android:layout_marginTop="21dp"
-        app:layout_constraintTop_toBottomOf="@+id/tv_team" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_team"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
         android:id="@+id/tv_lives"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/lives"
-        tools:layout_editor_absoluteY="16dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/tv_team"
-        android:layout_marginLeft="8dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
         android:id="@+id/tv_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/score"
-        tools:layout_editor_absoluteX="247dp"
-        android:layout_marginTop="13dp"
-        app:layout_constraintTop_toBottomOf="@+id/tv_lives" />
+        android:layout_marginTop="21dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lives"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
         android:id="@+id/tv_question"
         android:layout_width="241dp"
         android:layout_height="77dp"
         android:text="@string/question"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="124dp" />
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="74dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_player" />
 
     <TextView
         android:id="@+id/tv_value"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="61dp"
+        android:layout_height="22dp"
         android:text="@string/value"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="290dp" />
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_question"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_response1"
+        app:layout_constraintVertical_bias="0.952"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 </android.support.constraint.ConstraintLayout>
