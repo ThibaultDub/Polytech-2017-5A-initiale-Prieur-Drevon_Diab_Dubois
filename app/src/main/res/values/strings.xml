@@ -1,16 +1,24 @@
 <resources>
-    <!-- General -->
+    <!-- general -->
     <string name="app_name">ZeQuizz</string>
-
+   
     <!-- home -->
     <string name="tv_offline">Hors-ligne</string>
     <string name="tv_online">En ligne</string>
-
     <string name="btn_1Vs1">1 vs 1</string>
     <string name="btn_1VsAi">1 vs ia</string>
     <string name="btn_teamVsTeam">Equipe A vs équipe B</string>
-
     <string name="btn_1Vs1Online">1 vs 1 En ligne</string>
 
     <!-- game -->
+    <string name="team">Equipe : </string>
+    <string name="player">Joueur : </string>
+    <string name="lives">Vies : </string>
+    <string name="score">Score : </string>
+    <string name="value">Valeur : </string>
+    <string name="response1">Rep 1</string>
+    <string name="response2">Rep 2</string>
+    <string name="response3">Rep 3</string>
+    <string name="response4">Rep 4</string>
+    <string name="question">De quel animal est-ce le cri ? </string>
 </resources>
