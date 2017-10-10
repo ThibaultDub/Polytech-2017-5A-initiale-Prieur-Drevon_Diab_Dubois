@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">TPAndroid</string>
+    <!-- General -->
+    <string name="app_name">ZeQuizz</string>
+
+    <!-- home -->
+    <string name="tv_offline">Offline</string>
+    <string name="tv_online">Online</string>
+
+    <string name="btn_1Vs1">1 vs 1</string>
+    <string name="btn_1VsAi">1 vs ai</string>
+    <string name="btn_teamVsTeam">Team A vs Team B</string>
+
+    <string name="btn_1Vs1Online">1 vs 1 Online</string>
+
+    <!-- game -->
 </resources>
