@@ -29,20 +29,15 @@ public class HomeActivity extends AppCompatActivity {
         int id = v.getId();
         switch (id){
             case R.id.btn_1Vs1:
-                btn_1vs1.setText("ça marche");
                 goToGame();
                 break;
             case R.id.btn_1VsAi:
-                btn_1vsAI.setText("ça fonctionne");
                 goToGame();
                 break;
             case R.id.btn_teamVsTeam:
-                Log.i("HomeActivity", "Click on btn_teamVsTeam");
                 goToGame();
-                btn_teamVsTeam.setText("ça pulse");
                 break;
             case R.id.btn_1Vs1Online:
-                btn_1vs1Online.setText("ça roule");
                 goToGame();
                 break;
         }
