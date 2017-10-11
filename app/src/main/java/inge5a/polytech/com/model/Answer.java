@@ -1,4 +1,4 @@
-package inge5a.polytech.com.gameclasses;
+package inge5a.polytech.com.model;
 
 /**
  * Created by Thomas on 11-Oct-17.

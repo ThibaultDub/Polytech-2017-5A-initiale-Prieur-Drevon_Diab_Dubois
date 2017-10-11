@@ -1,4 +1,4 @@
-package inge5a.polytech.com.gameclasses;
+package inge5a.polytech.com.model;
 
 import java.util.ArrayList;
 
