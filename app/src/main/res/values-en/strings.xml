@@ -1,6 +1,7 @@
 <resources>
     <!-- General -->
     <string name="app_name">ZeQuizz</string>
+    <string name="toolbar_menu_title">Menu</string>
 
     <!-- home -->
     <string name="tv_offline">Offline</string>
