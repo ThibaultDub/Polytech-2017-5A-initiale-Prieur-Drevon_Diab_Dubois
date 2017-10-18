@@ -1,6 +1,9 @@
-package inge5a.polytech.com.model;
+package inge5a.polytech.com.model.question;
 
 import java.util.ArrayList;
+
+import inge5a.polytech.com.model.Answer;
+import inge5a.polytech.com.model.content.Content;
 
 /**
  * Created by Thomas on 11-Oct-17.

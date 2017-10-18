@@ -1,4 +1,4 @@
-package inge5a.polytech.com.model;
+package inge5a.polytech.com.model.content;
 
 /**
  * Created by thibault on 10/11/17.

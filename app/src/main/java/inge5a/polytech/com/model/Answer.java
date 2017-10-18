@@ -7,11 +7,11 @@ package inge5a.polytech.com.model;
 public class Answer {
 
     private String text;
-    private boolean rightAnswer;
+    private boolean isRightAnswer;
 
-    public Answer(String text, boolean rightAnswer) {
+    public Answer(String text, boolean isRightAnswer) {
         this.text = text;
-        this.rightAnswer = rightAnswer;
+        this.isRightAnswer = isRightAnswer;
     }
 
     public String getText() {
@@ -19,6 +19,6 @@ public class Answer {
     }
 
     public boolean isRightAnswer() {
-        return rightAnswer;
+        return isRightAnswer;
     }
 }
