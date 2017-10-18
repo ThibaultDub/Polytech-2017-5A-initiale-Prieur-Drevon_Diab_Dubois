@@ -17,7 +17,7 @@ public abstract class Question implements Parcelable {
     private List<Answer> answers;
     private int difficulty;
 
-    public Question(String content, ArrayList<Answer> answers) {
+    public Question(String content, List<Answer> answers) {
         this.setContent(content);
         this.setAnswers(answers);
     }
@@ -26,20 +26,8 @@ public abstract class Question implements Parcelable {
         // the order needs to be the same as in writeToParcel() method
         this.setContent(in.readString());
         this.setDifficulty(in.readInt());
-        this.setAnswers(in.createTypedArrayList(Question.CREATOR));
+        this.setAnswers(in.createTypedArrayList(Answer.CREATOR));
     }
-
-    public static final Creator<Answer> CREATOR = new Creator<Answer>() {
-        @Override
-        public Answer createFromParcel(Parcel in) {
-            return new Answer(in);
-        }
-
-        @Override
-        public Answer[] newArray(int size) {
-            return new Answer[size];
-        }
-    };
 
     @Override
     public int describeContents() {

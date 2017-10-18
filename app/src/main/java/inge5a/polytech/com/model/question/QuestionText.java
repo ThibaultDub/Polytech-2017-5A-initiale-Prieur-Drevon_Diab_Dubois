@@ -18,4 +18,17 @@ public class QuestionText extends Question {
     public QuestionText(Parcel in) {
         super(in);
     }
+
+
+    public static final Creator<QuestionText> CREATOR = new Creator<QuestionText>() {
+        @Override
+        public QuestionText createFromParcel(Parcel in) {
+            return new QuestionText(in);
+        }
+
+        @Override
+        public QuestionText[] newArray(int size) {
+            return new QuestionText[size];
+        }
+    };
 }

@@ -1,6 +1,7 @@
 package inge5a.polytech.com.model;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Thomas on 11-Oct-17.
@@ -9,12 +10,12 @@ import java.util.ArrayList;
 public class Team {
 
     private String name;
-    private ArrayList<Player> players;
+    private List<Player> players;
     private int lives;
     private int score;
     private int correctAnswerStreak;
 
-    public Team(String name, ArrayList<Player> players) {
+    public Team(String name, List<Player> players) {
         this.name = name;
         this.players = players;
         this.score = 0;
@@ -24,7 +25,7 @@ public class Team {
         return name;
     }
 
-    public ArrayList<Player> getPlayers() {
+    public List<Player> getPlayers() {
         return players;
     }
 
