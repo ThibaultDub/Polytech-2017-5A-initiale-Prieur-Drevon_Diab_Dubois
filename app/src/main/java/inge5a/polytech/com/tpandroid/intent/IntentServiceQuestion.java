@@ -23,11 +23,13 @@ public class IntentServiceQuestion extends IntentService {
     protected void onHandleIntent(Intent intent) {
         String current_request = intent.getStringExtra(PARAM_IN_MSG);
 
-        String resultTxt = "";
-        if (current_request == "new_question"){
+        String resultTxt = "bitepoilcouille";
+
+        if (current_request.equals("new_question")){
+
             resultTxt="Quelle est la couleur du cheval blanc d'henry IV ? //Blanc //Rouge //Multicolore//Parabolique";
         }
-        else if (current_request == "check_answer"){
+        else if (current_request.equals("check_answer")){
             resultTxt="bien joué champion";
         }
 
