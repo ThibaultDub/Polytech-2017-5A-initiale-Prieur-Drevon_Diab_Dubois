@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.view.*;
 
+import inge5a.polytech.com.controller.BeerController;
+
 public class HomeActivity extends AbstractActivity {
 
     private Button btn_1vs1;
@@ -50,12 +52,12 @@ public class HomeActivity extends AbstractActivity {
         }
     }
 
-    public void goToGame(){
+    public void goToGame() {
         Intent myIntent = new Intent(getBaseContext(), GameActivity.class);
         getBaseContext().startActivity(myIntent);
     }
 
-    public void goToBeers(){
+    public void goToBeers() {
         Intent myIntent = new Intent(getBaseContext(), BeersActivity.class);
         getBaseContext().startActivity(myIntent);
     }
