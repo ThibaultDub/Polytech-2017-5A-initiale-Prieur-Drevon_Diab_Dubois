@@ -3,6 +3,7 @@ package inge5a.polytech.com.controller;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import inge5a.polytech.com.model.Beer;
@@ -13,8 +14,9 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class BeerController implements Callback<List<Beer>>{
+public class BeerController implements Callback<List<Beer>> {
     private final String apiUrl = "https://api.punkapi.com/";
+    private List<Beer> beerList;
 
     public void start(){
         Gson gson = new GsonBuilder()
@@ -30,15 +32,19 @@ public class BeerController implements Callback<List<Beer>>{
 
         Call<List<Beer>> call = beersAPI.getBeers();
         call.enqueue(this);
+//        call.execute();
     }
 
     @Override
     public void onResponse(Call<List<Beer>> call, Response<List<Beer>> response) {
         if(response.isSuccessful()) {
-            List<Beer> beerList = response.body();
-            if (beerList != null) {
-                for(Beer b : beerList) {
+            List<Beer> beerListe = response.body();
+            if (beerListe != null) {
+                beerList = new ArrayList<>();
+
+                for(Beer b : beerListe) {
                     System.out.println(b.getName());
+                    beerList.add(b);
                 }
             }
         } else {
@@ -49,5 +55,9 @@ public class BeerController implements Callback<List<Beer>>{
     @Override
     public void onFailure(Call<List<Beer>> call, Throwable t) {
         t.printStackTrace();
+    }
+
+    public List<Beer> getBeerList() {
+        return beerList;
     }
 }
