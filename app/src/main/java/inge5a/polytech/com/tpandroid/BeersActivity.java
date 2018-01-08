@@ -3,12 +3,13 @@ package inge5a.polytech.com.tpandroid;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.List;
 
 import inge5a.polytech.com.controller.BeerController;
 import inge5a.polytech.com.model.Beer;
-import inge5a.polytech.com.retrofit.RecyclerViewAdapter;
 
 public class BeersActivity extends AbstractActivity{
 

@@ -4,12 +4,14 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import inge5a.polytech.com.model.Beer;
+import inge5a.polytech.com.tpandroid.R;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
     private List<Beer> data = new ArrayList<>();
@@ -17,10 +19,12 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         public TextView text;
+        public ImageView image;
 
         public ViewHolder(View v) {
             super(v);
             text = (TextView) v.findViewById(android.R.id.text1);
+            image = (ImageView) v.findViewById(android.R.id.icon1);
         }
     }
 
@@ -39,8 +43,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public void onBindViewHolder(RecyclerViewAdapter.ViewHolder holder, int position) {
         if (data != null) {
             Beer beer = data.get(position);
-            holder.text.setText(beer.getName());
-            holder.itemView.setTag(beer.getAbv());
+            holder.text.setText(beer.getName() + " " + beer.getAbv() + "°");
+            holder.itemView.setTag(beer.getTagline());
         }
     }
 
