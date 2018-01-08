@@ -13,7 +13,6 @@ import inge5a.polytech.com.retrofit.RecyclerViewAdapter;
 public class BeersActivity extends AbstractActivity{
 
     private RecyclerView mRecyclerView;
-    private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
 
     private List<Beer> beerList;
@@ -39,15 +38,6 @@ public class BeersActivity extends AbstractActivity{
 
         // specify an adapter (see also next example)
         BeerController b = new BeerController();
-        b.start();
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        mAdapter = new RecyclerViewAdapter(beerList);
-        mRecyclerView.setAdapter(mAdapter);
+        b.start(mRecyclerView);
     }
 }
