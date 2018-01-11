@@ -9,6 +9,12 @@ https://guides.github.com/introduction/flow/
 
 - sujet
 
-- tuto
+https://goo.gl/jxzLoS
+
+- tutoriels suivis
+
+http://www.vogella.com/tutorials/Retrofit/article.html#exercise-using-retrofit-to-query-gerrit-in-java
 
 - libs
+
+http://square.github.io/retrofit/

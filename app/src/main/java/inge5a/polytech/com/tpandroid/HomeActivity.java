@@ -5,12 +5,15 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.view.*;
 
+import inge5a.polytech.com.controller.BeerController;
+
 public class HomeActivity extends AbstractActivity {
 
     private Button btn_1vs1;
     private Button btn_1vsAI;
     private Button btn_teamVsTeam;
     private Button btn_1vs1Online;
+    private Button btn_beers;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +23,7 @@ public class HomeActivity extends AbstractActivity {
         btn_1vsAI = (Button) findViewById(R.id.btn_1VsAi);
         btn_teamVsTeam = (Button) findViewById(R.id.btn_teamVsTeam);
         btn_1vs1Online = (Button) findViewById(R.id.btn_1Vs1Online);
+        btn_beers = (Button) findViewById(R.id.btn_beers);
     }
 
     @Override
@@ -42,12 +46,19 @@ public class HomeActivity extends AbstractActivity {
             case R.id.btn_1Vs1Online:
                 goToGame();
                 break;
+            case R.id.btn_beers:
+                goToBeers();
+                break;
         }
     }
 
-    public void goToGame(){
+    public void goToGame() {
         Intent myIntent = new Intent(getBaseContext(), GameActivity.class);
         getBaseContext().startActivity(myIntent);
     }
 
+    public void goToBeers() {
+        Intent myIntent = new Intent(getBaseContext(), BeersActivity.class);
+        getBaseContext().startActivity(myIntent);
+    }
 }

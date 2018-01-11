@@ -19,7 +19,7 @@ public class Quiz implements Parcelable {
     private int timeLimit;
 
     protected Quiz(Parcel in) {
-        setQuestions(in.createTypedArrayList(Question.CREATOR));
+        //setQuestions(in.createTypedArrayList(Question.CREATOR));
         setTimeLimit(in.readInt());
     }
 
